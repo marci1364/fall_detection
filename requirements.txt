@@ -6,5 +6,6 @@ phonenumbers
 wtforms
 pandas
 python-dotenv
+sklearn
 
 
