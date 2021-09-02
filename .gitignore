@@ -1,0 +1,6 @@
+# Project exclude paths
+venv/
+dataset/Annotated Data/
+.env
+*.log
+staticfiles
