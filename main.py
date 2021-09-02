@@ -26,7 +26,7 @@ class RegisterationForm(FlaskForm):
 
 load_dotenv()
 
-SECRET_KEY = getenv('SECRET_KEY', None)
+SECRET_KEY = getenv('SECRET_KEY')
 app = Flask(__name__)
 app.config['SECRET_KEY'] = SECRET_KEY
 
