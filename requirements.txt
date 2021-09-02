@@ -1,3 +1,4 @@
+gunicorn
 flask
 flask_wtf
 wtforms
@@ -5,4 +6,5 @@ phonenumbers
 wtforms
 pandas
 python-dotenv
+
 
