@@ -4,6 +4,7 @@ from wtforms import StringField, ValidationError
 import phonenumbers
 from wtforms.validators import DataRequired
 from inference import *
+import os
 from os import getenv
 from dotenv import load_dotenv
 
@@ -27,6 +28,9 @@ class RegisterationForm(FlaskForm):
 load_dotenv()
 
 SECRET_KEY = getenv('SECRET_KEY')
+
+SECRET_KEY = os.urandom(32)
+
 app = Flask(__name__)
 app.config['SECRET_KEY'] = SECRET_KEY
 
