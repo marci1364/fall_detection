@@ -22,7 +22,7 @@ def threshold_detect(threshold, df_list, w):
                     index.append(df.loc[j: j + w - 1])
                     j = j + w
                 else:
-                    index.append(df.loc[j: -1])
+                    index.append(df.loc[j: ])
                     cont = False
             elif j + 1 < len(df):
                 j = j + 1

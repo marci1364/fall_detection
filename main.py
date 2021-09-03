@@ -128,6 +128,22 @@ def activate():
             msg = """Fall is Detected! 
                   Message is being sent to the emergency contact."""
 
+    if request.form.get('action') == 'FW Knee Fall':
+
+        fall = inference('test_data/FKL_acc_1_1.txt')
+
+        if fall is True:
+            msg = """Fall is Detected! 
+                  Message is being sent to the emergency contact."""
+
+    if request.form.get('action') == 'Sit to Stand':
+
+        fall = inference('test_data/SCH_acc_1_1.txt')
+
+        if fall is True:
+            msg = """Fall is Detected! 
+                  Message is being sent to the emergency contact."""
+
 
     return render_template('base_test.html', predict_content = msg)
 

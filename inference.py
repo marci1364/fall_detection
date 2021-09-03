@@ -21,7 +21,7 @@ def inference(test_data):
     df_data_set = set_index([df_data])
     # find windows over threshold
     over_ths_test = threshold_detect(config.threshold, df_data_set, config.w_t * config.Fs)
-    if len(over_ths_test[0]) == 0:
+    if len(over_ths_test)  == 0:
         return False
 
     # Extract features of over_threshold windows
